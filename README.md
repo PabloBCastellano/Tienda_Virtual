@@ -1,7 +1,7 @@
 # Tienda_Virtual
 
-/admin.
-Usuario:Pablo
-Clave:rootroot
+/admin.\n
+Usuario:Pablo \n
+Clave:rootroot\n
 
 Esta aplicacion usando el framework de python Django es una Tienda que vende Discos de Cancion Española .
