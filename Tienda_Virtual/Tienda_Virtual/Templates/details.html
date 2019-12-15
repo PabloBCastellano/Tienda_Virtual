@@ -1,0 +1,26 @@
+<html><meta charset='utf-8'>
+<head>
+{% extends "base.html" %}
+{% load static %}
+
+
+</head>
+{% block Pablo %}
+<body style="background-color:#BDB76B;font-family:Arial;font-size:16px;text-align:justify;">
+
+
+	<div class="card" style="width: 20rem;margin-left:40%;margin-top:2%;margin-bottom:10%;">
+			<img src="{%static object.image  %}" class="card-img-top" alt="..." style='width:80%;height:140%;margin-top:5%;margin-left:10%;'>
+			<div class="card-body">
+			  <h5 class="card-title">{{object.name}}</h5>
+			  <p class="card-title">{{object.description}}</p>
+			  <h5 class="card-title">{{object.price}}€</h5>
+			  <p class="card-title">{{object.characteristic}}</p>
+			  <button class="btn btn-success">Buy</button>
+			</div>
+		  </div>
+    
+</body>    
+
+{% endblock Pablo %}
+</html>

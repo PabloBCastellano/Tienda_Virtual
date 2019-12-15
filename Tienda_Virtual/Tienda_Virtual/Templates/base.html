@@ -1,0 +1,82 @@
+<html><meta charset="utf-8">
+	<link rel="icon" type="image/png" href="/static/img/favicon.jpg">
+    <title>Página base</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+    <head>
+		<style type='text/css'>
+			
+			
+			a{	
+				font-family:Times New Roman;
+				font-size:18px;
+				color:green;
+			}
+			#Detallar:hover{
+				font-family:Times New Roman;
+				font-size:18px;
+				color:#000000;
+			}
+			
+			table{
+				
+				background-color:#BDB76B;font-family:Arial;font-size:16px;text-align:justify;"
+			}
+			
+			.table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+				border: 1px solid blue;
+}
+			
+			.table-hover> tbody> tr:hover{
+				background-color:#F5F5DC;
+			}
+.newsletter {
+	padding: 80px 0;
+	
+}
+
+.newsletter .content {
+	max-width: 650px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
+.newsletter .content h2 {
+	color: #243c4f;
+	margin-bottom: 40px; }
+	.newsletter .content .form-control {
+	height: 50px;
+	border-color: #ffffff;
+	border-radius:0;
+}
+.newsletter .content.form-control:focus {
+	box-shadow: none;
+	border: 2px solid #243c4f;
+}
+.newsletter .content .btn {
+	min-height: 50px; 
+	border-radius:0;
+	background: #243c4f;
+	color: #fff;
+	font-weight:600;
+}
+
+footer{
+	background-color:gold;
+	
+}
+#link{
+	color:blue;
+}
+</style>
+	</head>
+	<body>
+        {% include 'navbar.html' %}
+
+        {% block Pablo %}
+            remplace me
+        {% endblock %}
+		{% include 'footer.html' %}
+	</body>
+		
+</html>

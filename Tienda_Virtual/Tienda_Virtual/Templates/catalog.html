@@ -1,0 +1,49 @@
+<html><meta charset="utf-8">
+{% extends "base.html" %}
+{% load static %}
+<h1>List of Catalog</h1>
+<head>
+	
+</head>
+<body >
+{% block Pablo %}
+	<table class="table table-bordered table-hover">
+		<thead>
+			<tr>
+				
+				<!-- <th scope="col">ID</th> -->
+				<th scope="col" style="text-align:center;width:25%;">Name</th>
+				<th scope="col" style="text-align:center;width:13%;" >description</th>
+				
+				<th scope="col" style="text-align:center;">image</th>
+				<th scope="col" style="text-align:center;width:10%;">price</th>
+				<th scope="col" style="text-align:center;width:60%;">characteristic</th>
+				<th scope="col" style="text-align:center">#</th>
+			</tr>
+		</thead>
+			<tbody>
+	 
+	   
+				{% for producto in object %}
+			
+					<tr>
+						<!-- <th scope="row">{{ producto.id }}</th> -->
+						<td style="text-align:center;padding-top:5%;">{{ producto.name }}</td>
+						<td style="text-align:center;padding-top:4%;">{{ producto.description }}</td>
+						<td ><img src='{%static producto.image%}'style="width:150px;height:150px;"></img></td>
+						<td style="text-align:center; padding-top:5%;">{{ producto.price }} €</td>
+						<td style="text-align:justify;">{{producto.characteristic}}</td>
+						<td style="text-align:center;width:20%;padding-top:5%;"><a href="/product/{{producto.id}}" id="Detallar">DETAILS</a></td>
+					</tr>
+				
+				
+					   
+				{% endfor %}
+			</tbody>
+	</table>
+	
+	{% endblock Pablo %}
+</body>
+	
+
+</html>
